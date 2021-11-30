@@ -72,15 +72,22 @@ body {
 @font-face {
     font-family: CustomFont;
     src: url(HussarBoldWeb-bf92.woff);
+	
+	@font-face {
+	font-family: fonts;
+	src: url("HussarSzturmOblique-qWXq.otf")
+		}
 }
 		.text {
-    font-family: CustomFont;
+    font-family: fonts;
     color: white;
 	font-size: 1.5rem;
-	text-align: start;
+	text-align: justify;
+	margin-left: 1%;
         }
 		.credits {
 			color: white;
+			margin-left: 1%;
 		}
 		.creation {
 			font-family: CustomFont;
@@ -97,7 +104,7 @@ body {
 			margin: 0%;
 			display: block;
 			background-color: black;
-			height: 2rem;
+			height: 3rem;
 		}
         .images {
             width: 150px;
@@ -105,14 +112,18 @@ body {
             margin-left: auto;
             margin-right: auto;
         }
+		.links {
+			color: white;
+			font-family: fonts;
+		}
 	</style>
 <body>
     <div>	
-        <nav style="text-align: center;">
-		<a href="https://www.youtube.com/c/w3schools" style="color: white;">w3schools Youtube Channel</a> |
-        <a href="https://www.w3schools.com/html/default.asp" style="color: white;">HTML Tutorial w3schools</a> |
-        <a href="https://www.w3schools.com/css/default.asp" style="color: white;">CSS Tutorial w3schools</a> |
-        <a href="https://www.w3schools.com/js/default.asp" style="color: white;">JavaScript Tutorial w3schools</a> |
+        <nav style="text-align: center; padding-top: 1%;">
+		<a href="https://www.youtube.com/c/w3schools" class="links">w3schools Youtube Channel</a> |
+        <a href="https://www.w3schools.com/html/default.asp" class="links">HTML Tutorial w3schools</a> |
+        <a href="https://www.w3schools.com/css/default.asp" class="links">CSS Tutorial w3schools</a> |
+        <a href="https://www.w3schools.com/js/default.asp" class="links">JavaScript Tutorial w3schools</a> |
 	    </nav>
     </div>
     
