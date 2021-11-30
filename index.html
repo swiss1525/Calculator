@@ -8,6 +8,7 @@
     <script src="./index.js" defer></script>
 </head>
 	<style>
+	
 		*, *::before, *::after {
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
@@ -20,12 +21,20 @@ body {
     margin: 0;
     background:  radial-gradient(#879AF2, #D3208B, #FDA000)
 }
+		.Title {
+			color: white; 
+			font-family: CustomFont; 
+			text-align: center; 
+			font-size: 2.5rem;
+			padding: 0%;
+			margin: 20px;
+		}
 
 .calculator-grid {
     display:  grid;
     justify-content:  center;
     align-content:  center;
-    min-height: 100vh;
+    min-height: 0vh;
     grid-template-columns:  repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 
@@ -128,7 +137,7 @@ body {
     </div>
     
     <div>   
-<p style="color: white; font-family: CustomFont; text-align: center; font-size: 2.5rem;">Calculator</p>
+<p class="Title">Calculator</p>
         <p class="text">Click "AC" first before making any calculations</p>
     </div>
 
@@ -171,6 +180,7 @@ body {
         <img class="images" src="Swiss-Alt-Logo-03-03.png" alt="">
         <p style="text-align: center; color: white;">Swiss3015 Logo</p>
 	</div>
+	<img class="images" src="bridge.jpg" alt="Image of a bridge">
     <button><a href="#top">Top</a></button>
 </body>
 </html>
