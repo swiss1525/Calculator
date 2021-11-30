@@ -6,126 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="form.js" defer></script>
 </head>
-	<style>
-	
-		*, *::before, *::after {
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: normal;
-
-}
-
-body {
-    padding: 0%;
-    margin: 0;
-    background:  radial-gradient(#879AF2, #D3208B, #FDA000)
-}
-		.Title {
-			color: white; 
-			font-family: CustomFont; 
-			text-align: center; 
-			font-size: 2.5rem;
-			padding: 0%;
-			margin: 20px;
-		}
-
-.calculator-grid {
-    display:  grid;
-    justify-content:  center;
-    align-content:  center;
-    min-height: 0vh;
-    grid-template-columns:  repeat(4, 100px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
-
-}
-
-.calculator-grid > button {
-    cursor: pointer;
-    font-size: 2rem;
-    border: 1px solid white;
-    outline:  none;
-    background-color: rgba(255, 255, 255, .75);
-}
-
-.calculator-grid > button:hover {
-    background-color: rgba(255, 255, 255, .9);
-}
-
-.span-two {
-    grid-column: span 2;
-}
-
-.output {
-    grid-column: 1 / -1;
-    background-color: rgba(0, 0, 0, 0.75);
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    flex-direction:  column;
-    padding: 10px;
-    word-wrap: break-word;
-    word-break: break-all;
-}
-
-.output .current-operand {
-    color: white;
-    font-size: 1.5rem;
-}
-
-.output .previous-operand {
-    color: white;
-    font-size: 2.5rem;
-}
-
-@font-face {
-    font-family: CustomFont;
-    src: url(HussarBoldWeb-bf92.woff);
-	
-	@font-face {
-	font-family: fonts;
-	src: url("HussarSzturmOblique-qWXq.otf")
-		}
-}
-		.text {
-    font-family: CustomFont;
-    color: white;
-	font-size: 1.5rem;
-	text-align: justify;
-	margin-left: 1%;
-        }
-		.credits {
-			color: white;
-			margin-left: 1%;
-		}
-		.creation {
-			font-family: CustomFont;
-			text-align: center;
-			font-size: 2.5rem;
-			color: white;
-		}
-		.information {
-			text-align: center;
-			color: white;
-		}
-		nav {
-			padding: 0.5%;
-			margin: 0%;
-			display: block;
-			background-color: black;
-			height: 3rem;
-		}
-        .images {
-            width: 150px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-		.links {
-			color: white;
-			font-family: fonts;
-		}
-	</style>
 <body>
     <div>	
         <nav style="text-align: center; padding-top: 1%;">
@@ -178,8 +61,38 @@ body {
 		<p class="information">This website is created using HTML, CSS, and JavaScript. The IDE used for this site are Visual Studio Code and Dreamweaver <br>
 		</p>
         <img class="images" src="Swiss-Alt-Logo-03-03.png" alt="">
-        <p style="text-align: center; color: white;">Swiss3015 Logo</p>
+        <p style="text-align: center; color: white; padding: 1%;">Swiss3015 Logo</p>
 	</div>
-    <button><a href="#top">Top</a></button>
+
+    <section>
+        <div class="container">
+          <form action="https://formspree.io/mbjzbwaj" method="POST" id="my-form">
+      
+            <div class="form-group">
+              <label for="firstName"> First Name</label>
+              <input type="text" id="firstName" name="firstName">
+            </div>
+      
+            <div class="form-group">
+              <label for="latsName">Last Name</label>
+              <input type="text" id="lastName" name="lastName">
+            </div>
+      
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </div>
+      
+            <div class="form-group">
+              <label for="massage">Massage</label>
+              <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+            </div>
+      
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div id="status"></div>
+      </section>
+      <button><a href="#top">Top</a></button>
 </body>
 </html>
