@@ -18,7 +18,7 @@
 body {
     padding: 0%;
     margin: 0;
-    background:  radial-gradient(#13E2dA, #9055FF);
+    background:  radial-gradient(#879AF2, #D3208B, #FDA000)
 }
 
 .calculator-grid {
@@ -103,15 +103,29 @@ body {
 			display: block;
 			background-color: black;
 			height: 2rem;
-
 		}
+        .images {
+            width: 150px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
 	</style>
 <body>
-	<nav>
-		<a href="https://www.youtube.com/" style="color: white;">Youtube</a>
-	</nav>
-    <h1 class="header">Calculator</h1>
-	<p class="text">Click "AC" first before making any calculations</p>
+    <div>	
+        <nav style="text-align: center;">
+		<a href="https://www.youtube.com/c/w3schools" style="color: white;">w3schools Youtube Channel</a> |
+        <a href="https://www.w3schools.com/html/default.asp" style="color: white;">HTML Tutorial w3schools</a> |
+        <a href="https://www.w3schools.com/css/default.asp" style="color: white;">CSS Tutorial w3schools</a> |
+        <a href="https://www.w3schools.com/js/default.asp" style="color: white;">JavaScript Tutorial w3schools</a> |
+	    </nav>
+    </div>
+
+    <div>   
+        <h1 class="header">Calculator</h1>
+        <p class="text">Click "AC" first before making any calculations</p>
+    </div>
+
     <div class="calculator-grid">
         <div class="output">
             <div data-previous-operand class="previous-operand"></div>
@@ -149,6 +163,10 @@ body {
 		<p class="creation">How the Website is created</p>
 		<p class="information">This website is created using HTML, CSS, and JavaScript. The IDE used for this site are Visual Studio Code and Dreamweaver <br>
 		</p>
+        <img class="images" src="Swiss-Alt-Logo-03-03.png" alt="">
+        <p style="text-align: center; color: white;">Swiss3015 Official Logo</p>
 	</div>
+
+    <button><a href="#top">Top</a></button>
 </body>
 </html>
