@@ -1,115 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <script src="./index.js" defer></script>
-    <link rel="stylesheet" href="page1.css" />
-  </head>
-  <body>
-    <div>
-      <nav style="text-align: center; padding-top: 1%">
-        <a href="https://www.youtube.com/c/w3schools" class="links"
-          >w3schools Youtube Channel</a
-        >
-        |
-        <a href="https://www.w3schools.com/html/default.asp" class="links"
-          >HTML Tutorial w3schools</a
-        >
-        |
-        <a href="https://www.w3schools.com/css/default.asp" class="links"
-          >CSS Tutorial w3schools</a
-        >
-        |
-        <a href="https://www.w3schools.com/js/default.asp" class="links"
-          >JavaScript Tutorial w3schools</a
-        >
-        |
-      </nav>
+    <link rel="stylesheet" href="page1.css">
+</head>
+<body>
+    <div>	
+        <nav style="text-align: center; padding-top: 1%;">
+		| <a href="https://www.youtube.com/c/w3schools" class="links">w3schools Youtube Channel</a> |
+        <a href="https://www.w3schools.com/html/default.asp" class="links">HTML Tutorial w3schools</a> |
+        <a href="https://www.w3schools.com/css/default.asp" class="links">CSS Tutorial w3schools</a> |
+        <a href="https://www.w3schools.com/js/default.asp" class="links">JavaScript Tutorial w3schools</a> |
+	    </nav>
     </div>
-
-    <div>
-      <p class="Title" style="text-shadow: rgb(0, 0, 0) 5px 0 10px">
-        Calculator
-      </p>
-      <p class="text">Click "AC" first before making any calculations</p>
+    
+    <div>   
+<p class="Title" style="text-shadow: rgb(255, 255, 255) 2px 0 5px;">Calculator</p>
+        <p class="text" style="font-family: CustomFont;">Click "AC" first before making any calculations</p>
     </div>
 
     <div class="calculator-grid">
-      <div class="output">
-        <div data-previous-operand class="previous-operand"></div>
-        <div data-current-operand class="current-operand"></div>
-      </div>
-      <button data-all-clear class="span-two">AC</button>
-      <button data-delete>DEL</button>
-      <button data-operation>÷</button>
-      <button data-number>1</button>
-      <button data-number>2</button>
-      <button data-number>3</button>
-      <button data-operation>*</button>
-      <button data-number>4</button>
-      <button data-number>5</button>
-      <button data-number>6</button>
-      <button data-operation>+</button>
-      <button data-number>7</button>
-      <button data-number>8</button>
-      <button data-number>9</button>
-      <button data-operation>-</button>
-      <button data-number>.</button>
-      <button data-number>0</button>
-      <button data-equals class="span-two">=</button>
-    </div>
-
-    <div class="credits">
-      <p>Website Developer: Swiss</p>
-      <p>
-        <a href="page2.html" target="_self">Contact the Developer</a>
-      </p>
-      <p>
-        Links to Developer: <br />
-        <a href="https://www.instagram.com/swiss._.1/?hl=en">Instagram</a>
-        <br />
-        <a href="https://www.behance.net/swissdesigns">Behance</a>
-      </p>
-    </div>
-    <div>
-      <p class="creation">How the Website is created</p>
-      <p class="information">
-        This website is created using HTML, CSS, and JavaScript. The IDE used
-        for this site are Visual Studio Code and Dreamweaver <br />
-      </p>
-      <img class="images" src="Swiss-Alt-Logo-03-03.png" alt="" />
-      <p style="text-align: center; color: white; padding: 1%">
-        Swiss3015 Logo
-      </p>
-    </div>
-
-    <button><a href="#top">Top</a></button>
-    <footer>
-      <nav class="nav2" style="text-align: center; padding-top: 1%">
-        <a
-          href="page3.html"
-          target="_self"
-          style="color: black; font-family: fonts"
-          >Learn JavaScript (Video)</a
-        >
-        |
-        <a
-          href="page4.html"
-          target="_self"
-          style="color: black; font-family: fonts"
-          >Learn CSS (Video)</a
-        >
-        |
-        <a
-          href="page5.html"
-          target="_self"
-          style="color: black; font-family: fonts"
-          >Learn HTML
-        </a>
-      </nav>
-    </footer>
-  </body>
+        <div class="output">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+        </div>
+        <button data-all-clear class="span-two">AC</button>
+        <button data-delete>DEL</button>
+        <button data-operation>÷</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>*</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>+</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation>-</button>
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-equals class="span-two">=</button>
+	</div>
+	
+	<div class="credits">
+		<p>Website Developer: Swiss</p>
+		<section class="contact-link">
+		        <p>
+            <a href="page2.html" target="_self">Contact the Developer</a>
+            </p>
+		<p>Links to Developer: <br> 
+		<a href="https://www.instagram.com/swiss._.1/?hl=en">Instagram</a> <br>
+		<a href="https://www.behance.net/swissdesigns">Behance</a>
+		</p>
+		</section>
+	</div>
+		<div>
+		<p class="creation">How the Website is created</p>
+		<p class="information">This website is created using HTML, CSS, and JavaScript. The IDE used for this site are Visual Studio Code and Dreamweaver <br>
+		</p>
+        <img class="images" src="Swiss-Alt-Logo-03-03.png" alt="">
+        <p style="text-align: center; color: white; padding: 1%;">Swiss3015 Logo</p>
+	</div>
+     
+      <button><a href="#top">Top</a></button>
+      <footer>
+          <nav class="nav2" style="text-align: center; padding-top: 1.3%;">
+           | <a href="page3.html" target="_self" style="color: black; font-family: fonts;">Learn JavaScript (Video)</a> |
+            <a href="page4.html" target="_self" style="color: black; font-family: fonts;">Learn CSS (Video)</a> |
+            <a href="page5.html" target="_self" style="color: black; font-family: fonts;">Learn HTML (Video)</a> |
+          </nav>
+      </footer>
+      </body>
 </html>
