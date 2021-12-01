@@ -8,7 +8,7 @@
 body {
     padding: 0%;
     margin: 0;
-    background:  radial-gradient(#879AF2, #D3208B, #FDA000)
+    background-color: #1f1e1f
 }
 		.Title {
 			color: white; 
@@ -26,7 +26,6 @@ body {
     min-height: 0vh;
     grid-template-columns:  repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
-
 }
 
 .calculator-grid > button {
@@ -70,12 +69,12 @@ body {
 @font-face {
     font-family: CustomFont;
     src: url(HussarBoldWeb-bf92.woff);
+}
 	
 	@font-face {
 	font-family: fonts;
 	src: url("HussarSzturmOblique-qWXq.otf")
 		}
-}
 		.text {
     font-family: CustomFont;
     color: white;
@@ -86,6 +85,7 @@ body {
 		.credits {
 			color: white;
 			margin-left: 1%;
+			text-align: center;
 		}
 		.creation {
 			font-family: CustomFont;
@@ -105,11 +105,11 @@ body {
 			height: 3rem;
 		}
     .nav2 {
-        padding: 0.5%;
+        padding: 1%;
         margin: 0%;
         display: block;
         background-color: white;
-        height: 2.5rem;
+        height: 3rem;
       }
         .images {
             width: 150px;
@@ -121,6 +121,9 @@ body {
 			color: black;
 			font-family: fonts;
 		}
+.contact-link {
+	text-align: center;
+}
 
   .iframe-container{
     position: relative;
