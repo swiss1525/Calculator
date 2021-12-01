@@ -1,7 +1,6 @@
 window.addEventListener("DOMContentLoaded", function () {
     // get the form elements defined in your form HTML above
   
-    var form = document.getElementById("A New Form");
     // var button = document.getElementById("my-form-button");
     var status = document.getElementById("status");
   
